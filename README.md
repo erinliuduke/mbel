@@ -42,6 +42,7 @@ This is a picture book generator app based on the OpenAI API [quickstart tutoria
    ```bash
    export OPENAI_API_KEY='YOUR_API_KEY_HERE'
    ```
+   Note: you may need to deactivate and reactivate your virtual environment here before running the app.
 
 8. Run the app:
 
