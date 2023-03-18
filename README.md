@@ -50,3 +50,4 @@ This is a picture book generator app based on the OpenAI API [quickstart tutoria
    ```
 
 You should now be able to access the app at the URL displayed in your terminal! Enter a topic or premise for your story in the box, press enter, and wait for the generation to load. Try describing different plot points, characters, or morals for your story.
+<img width="1493" alt="Screen Shot 2023-03-18 at 6 21 27 PM" src="https://user-images.githubusercontent.com/89790185/226143303-7be0af77-dad9-4685-8795-7266a30d8d7e.png">
