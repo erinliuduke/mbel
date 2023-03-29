@@ -61,6 +61,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 .result {
-  /*font-weight: bold;*/
-  /*margin-top: 40px;*/
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.result img{
+  height: 250px;
 }
