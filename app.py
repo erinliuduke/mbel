@@ -23,7 +23,26 @@ def index():
             ]
         )
         text = response['choices'][0]['message']['content']
-        return redirect(url_for("index", result=text))
+
+        sentences = text.split('.')
+        num_chunks = 4
+        chunk_size = len(sentences) // num_chunks
+        chunks = [sentences[i:i+chunk_size] for i in range(0, len(sentences), chunk_size)]
+        
+        text_chunks = []
+        image_urls = []
+        for chunk in chunks:
+            image_prompt = '.'.join(chunk)+'.'
+            response = openai.Image.create(
+                prompt=image_prompt,
+                n=1,
+                size='256x256'
+            )
+            url = response['data'][0]['url']
+            text_chunks.append(image_prompt)
+            image_urls.append(url)
+
+        return render_template("index.html", result=text_chunks, image_urls=image_urls)
 
     result = request.args.get("result")
     return render_template("index.html", result=result)
