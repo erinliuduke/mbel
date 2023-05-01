@@ -1,4 +1,4 @@
-# MBEL - Mini-books for Entertainment and Learning
+# MBEL - Mini-Books for Entertainment and Learning
 
 MBEL ("Mabel") is a picture book generator app based on the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Follow the instructions below to setup the app.
 
@@ -18,7 +18,7 @@ MBEL ("Mabel") is a picture book generator app based on the OpenAI API [quicksta
    cd mbel-gpt-flask
    ```
 
-4. Create a new virtual environment:
+4. Create and activate a new virtual environment:
 
    ```bash
    python -m venv venv
