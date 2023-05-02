@@ -37,6 +37,8 @@ MBEL ("Mabel") is a picture book generator app based on the OpenAI API [quicksta
 
    ```bash
    cp .env.example .env
+   # for Windows
+   copy .env.example .env
    ```
 
 7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file.
